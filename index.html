@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+   
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Han Sung Bae</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #eeeeee">
+
+    <!-- labeled the z-index as 1 in the style of the nav class because the profile picture kept overriding and laying on top of navbar when scrolling down -->
+    <nav class="navbar navbar-light position-fixed w-100 p-3 border-bottom border-secondary" style="background-color: white; z-index: 1;">
+        <div class="container-fluid mw-100">
+            <div class="row" style="position: relative; left: 8%;">
+                <div class="col-md-12">
+                    <h2 class="text-white text-center" style="background-color: #4aaaa5">Han Sung Bae</h2>
+                </div>
+            </div>
+            <div class="row" style="position: relative; left: -9%;">
+                <!-- each a href also has a class="text-secondary" embedded next to it to make the color of the link texts to be greyish -->
+                <!-- the classes with border-left creates a border and border-secondary creates the greyish color -->
+                <div class="col-md-4">
+                    <a href="file:///Users/baehansung/Desktop/UPenn_Coding/Basic-Portfolio_Bootstrap/index.html" class="text-secondary">About</a>
+                </div>
+                <div class="col-md-4 border-left border-secondary">
+                    <a href="file:///Users/baehansung/Desktop/UPenn_Coding/Basic-Portfolio_Bootstrap/portfolio.html" class="text-secondary">Portfolio</a>
+                </div>
+                <div class="col-md-4 border-left border-secondary">
+                    <a href="file:///Users/baehansung/Desktop/UPenn_Coding/Basic-Portfolio_Bootstrap/contact.html" class="text-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 115px;">
+       <div class="jumbotron bg-light">
+            <h1 class="border-bottom border-secondary" style="color:#4aaaa5">About Me</h1>
+            
+            <!-- why is images z-index the highest?? when scrolling down, the image gets put on top and over the
+            the nav bar section. fix this -->
+
+            <!-- the float-left property inside img class is allowed via bootstrap -->
+            <img class="float-left propic" src="pics/profilepic.jpg" alt="A profile picture of me" width="170" height="145" style="transform: rotate(270deg); position: relative; top: 45px;">
+            
+            <p class="text-secondary" style="line-height: 2">
+                Quick fun fact; In Korean culture, nearly all Korean names are three syllables long (2 for the first name and 1 for the last name). So my first name is Han Sung, but I also go by Han.
+                Anyways, about me... I recently graduated from Penn State University, but towards the end, I no longer wanted to pursue graduate school. 
+                I was confused for a while on what to do, and eventually I started getting into tech. I really got fascinated by how society will dramatically change in the near future due to technological advancements, 
+                and I also find concepts like articial intelligence, machine learning, cloud computing/architecture, and data analytics very interesting. Plus, I love blockchain related stuff and personally think it will revolutionize so many different industries.
+            </p>
+
+            <p class="text-secondary" style="line-height: 2">
+                I love sports, especially Philly sports! As well as UFC/MMA, soccer (Manchester United, Korea International, United States International), and tennis. 
+                Biking is also starting to be a passion of mine, and I hope to one day bike across the United States.
+            </p>
+
+            <p class="text-secondary" style="line-height: 2">
+                As for coding, currently (5/6/18) our bootcamp class is coding our own portfolio sites. Although coding languages like JavaScript is incredibly challenging at times, 
+                I know that anyone with perseverence and determination will continually grow. Hopefully, I'll have some cool stuff for you in the Portfolio section soon!
+            </p>
+       </div>
+    </div>
+
+    <!-- Need to take away the container class below to allow the Copyright border to stretch across the whole page -->
+    <!-- This is because the container class in bootstrap shrinks the left and right sides of the element a bit -->
+    <div class="border-top border-primary" style="border-color: #4aaaa5!important">
+        <div class="col-md-12 text-center p-3 mb-2 bg-secondary" style="margin-bottom: 0!important">
+            <p class="text-white" style="position: relative; bottom: -20px;">Copyright &#169;</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
